@@ -1,0 +1,22 @@
+{
+   "name":"pocket",
+   "description":"Pubsub via WebSockets",
+   "version":"0.0.1",
+   "homepage":"https://github.com/Jud/pocket",
+   "repository":"https://github.com/Jud/pocket.git",
+   "author":"Jud Stephenson (http://jud.me/)",
+   "dependencies":{
+      "coffee-script":"*",
+      "ws":"*"
+   },
+   "devDependencies":{
+      "mocha":"*",
+      "should":"*"
+   },
+   "scripts":{
+      "test":"mocha --compilers coffee:coffee-script --ignore-leaks --reporter spec"
+   },
+   "engines":{
+      "node":">= 0.10.0"
+   }
+}
