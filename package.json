@@ -7,15 +7,12 @@
    "author":"Jud Stephenson (http://jud.me/)",
    "dependencies":{
       "coffee-script":"*",
-      "ws":"*"
+      "ws":"*",
+      "protobuf":"*",
+      "async":"*",
+      "node-uuid":"*"
    },
-   "devDependencies":{
-      "mocha":"*",
-      "should":"*"
-   },
-   "scripts":{
-      "test":"mocha --compilers coffee:coffee-script --ignore-leaks --reporter spec"
-   },
+
    "engines":{
       "node":">= 0.10.0"
    }
