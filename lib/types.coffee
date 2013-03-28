@@ -1,5 +1,4 @@
 exports.JOIN = 'JOIN'
-exports.LEAVE = 'LEAVE'
-exports.ON = 'ON'
-exports.OFF = 'OFF'
-exports.AUTH = 'AUTH'
+exports.LEAVE   = 'LEAVE'
+exports.AUTH    = 'AUTH'
+exports.MESSAGE = 'MESSAGE'
