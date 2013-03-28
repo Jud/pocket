@@ -7,7 +7,7 @@
 - Add more features
 
 ### Examples
-```coffees
+```coffee
 # Import the pocket server
 {Server} = require 'pocket'
 
