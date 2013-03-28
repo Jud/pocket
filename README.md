@@ -1,5 +1,5 @@
 # Pocket
-## Websocket PubSub for Humans
+## Protobuf PubSub over WebSockets, _For Humans_
 
 ### Features
 - Simple protocol
