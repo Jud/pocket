@@ -9,6 +9,7 @@
       "coffee-script":"*",
       "ws":"*",
       "protobuf":"*",
+      "pocket.proto": "git+ssh://git@github.com:Jud/pocket.proto.git#master",
       "async":"*",
       "node-uuid":"*"
    },
