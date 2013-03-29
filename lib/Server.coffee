@@ -9,7 +9,8 @@ WebSocketServer = (require "ws").Server
 fs = require 'fs'
 path = require 'path'
 Schema = (require 'protobuf').Schema
-schema = new Schema fs.readFileSync path.resolve(__dirname,'../protobuf/pocket.desc')
+proto = path.resolve(require.resolve('pocket.proto'), '../pocket.desc')
+schema = new Schema fs.readFileSync proto
 
 # Setup the protobuf types
 Request = schema['pocket.Request']
