@@ -8,7 +8,7 @@
    "dependencies":{
       "coffee-script":"*",
       "ws":"*",
-      "protobuf":"*",
+      "protobuf":"git+ssh://git@github.com:Jud/protobuf.git#master",
       "pocket.proto": "git+ssh://git@github.com:Jud/pocket.proto.git#master",
       "async":"*",
       "node-uuid":"*"

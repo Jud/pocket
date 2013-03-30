@@ -127,14 +127,14 @@ class Server
       return False
 
     # If this is a malformed request
-    if !r.type then return @close()
+    if !r.request_type then return @close()
 
     # Close the server if they haven't authenticated and this
     # isn't a request to authenticate
-    if not @uuid and r.type is not types.AUTH then return @close()
+    if not @uuid and r.request_type is not types.AUTH then return @close()
 
     # Fire the auth event, with the request
-    server._do r.type.toLowerCase(), @, [r]
+    server._do r.request_type.toLowerCase(), @, [r]
 
     make_chan_name = (globals, uuid, chan) ->
       # lowercase
@@ -147,7 +147,7 @@ class Server
       # return it
       return chan
 
-    switch r.type
+    switch r.request_type
       # An authentication attempt
       when types.AUTH
         # Make sure that the attempt is valid
